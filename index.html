@@ -29,7 +29,9 @@
             justify-items: center;
         }
 
-        .linha {
+        h1::after {
+            content: '';
+            display: block;
             height: 3px;
             width: 200px;
             background: #8944ef;
@@ -51,6 +53,7 @@
             text-decoration: none;
             justify-items: center;
             color: #f0f0f0;
+            transition: .3s;
         }
 
         li a:hover {
@@ -67,6 +70,7 @@
 
         svg {
             fill: rgba(255, 255, 255, 0.5);
+            transition: .3s;
         }
 
         svg:hover {
@@ -76,6 +80,7 @@
         /* Estruturas isoladas */
         h1 {
             color: #8944ef;
+            text-align: center;
         }
     </style>
 
@@ -85,11 +90,10 @@
 
     <main class="estrutua">
         <h1>projetos</h1>
-        <span class="linha"></span>
 
         <ul class="projetos">
             <li>
-                <a class="bikcraft" href="bikcraft/index.html">
+                <a class="bikcraft" href="bikcraft/index.html" target="_blank">
                     <h2>bikcraft</h2>
                 </a>
             </li>
@@ -97,7 +101,7 @@
     </main>
 
     <footer class="redes-sociais">
-        <a id="github" href="https://github.com/laisa-alves">
+        <a id="github" href="https://github.com/laisa-alves" target="_blank">
 
             <?xml version="1.0" ?>
             <!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
@@ -111,7 +115,7 @@
             </svg>
         </a>
 
-        <a id="linkedin" href="https://www.linkedin.com/in/laisaalves">
+        <a id="linkedin" href="https://www.linkedin.com/in/laisaalves" target="_blank">
 
             <?xml version="1.0" ?>
             <!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>

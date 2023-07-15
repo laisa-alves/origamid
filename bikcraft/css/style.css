@@ -10,22 +10,41 @@ body {
 }
 
 /* Características do cabeçalho */
+header {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    gap: 60px;
+}
+
 .logo {
     max-width: 100%;
     display: block;
+}
+
+/* Características do menu */
+ul {
+    list-style: none;
+    margin-right: 0;
+    display: flex;
+    gap: 20px;
+    margin: 0px;
+    padding: 0px;
 }
 
 .menu a {
     text-decoration: none;
     color: #000;
     background: #fff;
-    padding: 15px 30px;
+    padding: 16px 32px;
     border-radius: 4px;
+    display: inline-block;
+    border: #f7f7f7 solid 2px;
 }
 
-.menu {
-    display: flex;
-    gap: 20px;
+.menu a:hover {
+    border: #ee2211 solid 2px;
+    transition: .1s;
 }
 
 /* Características do conteúdo - criação dos grids */
@@ -61,24 +80,32 @@ body {
     place-self: end;
 }
 
+.produto a:hover {
+    background: #990000;
+    transition: .3s;
+}
+
 .bike-foto {
     max-width: 100%;
 }
 
-.detalhe {
-    display: inline-block;
-    width: 60px;
+.produto::before {
+    content: '';
+    display: block;
     height: 4px;
+    width: 60px;
     background: #ee2211;
     position: absolute;
-    top: 30px;
+    right: 0px;
     right: -30px;
+    top: 30px;
 }
 
 /* Segunda linha do grid */
 .vantagens {
     padding: 40px;
     text-align: right;
+    background-image: url(/bikcraft/img/onda.svg);
 }
 
 /* Estruturando os itens das especificações em outro grid */
@@ -92,6 +119,11 @@ body {
     grid-template-columns: auto 1fr;
     gap: 10px 20px;
     padding: 20px;
+    border-left: #fff solid 4px;
+}
+
+.item:nth-child(odd) {
+    background: #f7f7f7;
 }
 
 .item h3 {
@@ -104,29 +136,46 @@ body {
     margin: 0px;
 }
 
+.item:hover {
+    border-left: #ee2211 solid 4px;
+    transition: .3s;
+}
+
 /* Rodapé */
+footer {
+    display: block;
+    width: 100%;
+}
+
 .rodape {
     background: #fff;
+    margin: 0px;
     padding: 40px;
-    width: 100%;
     text-align: center;
-    box-sizing: border-box;
 }
 
 /* Configurações dos elementos isolados */
 h1 {
-    font-size: 32px;
+    font-size: 2rem;
     margin: 0px;
 }
 
 h2 {
-    font-size: 64px;
+    font-size: 4rem;
     color: #c6c6c6;
     align-self: center;
     margin: 0px;
 }
 
+h3 {
+    font-size: 1.17rem;
+}
+
 p {
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.3;
+}
+
+a {
+    font-size: 1rem;
 }
