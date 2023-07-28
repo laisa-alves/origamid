@@ -105,7 +105,7 @@ ul {
 .vantagens {
     padding: 40px;
     text-align: right;
-    background-image: url(/bikcraft/img/onda.svg);
+    background-image: url(../bikcraft/img/onda.svg);
 }
 
 /* Estruturando os itens das especificações em outro grid */
